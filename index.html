@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header">
+          <img src="./images/logo.png" alt="" />
+          <nav>
+            <li class="clickMenu active">Menu</li>
+            <li class="clickOrder">Order</li>
+            <li class="clickAdmin">Admin</li>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section id="menu">
+      <div class="container">
+        <h1>MENU</h1>
+        <div class="menu"></div>
+      </div>
+    </section>
+    <section id="order">
+      <div class="container">
+        <h1>MY ORDERS</h1>
+        <div class="order"></div>
+      </div>
+    </section>
+    <section id="admin">
+      <div class="container">
+        <div class="admin">
+          <h1 class="adminTitle">CREATE PRODUCT</h1>
+          <form>
+            <input class="image" type="text" placeholder="Image URL..." />
+            <input class="name" type="text" placeholder="food name" />
+            <input class="price" type="text" placeholder="price" />
+            <button class="create">create</button>
+            <button class="save">save</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  </body>
+</html>

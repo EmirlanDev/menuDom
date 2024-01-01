@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+}
+
+body {
+  background: #95b9c9;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+#order,
+#admin {
+  display: none;
+}
+
+h1 {
+  color: #33332d;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 3.2px;
+  margin-top: 28px;
+  text-align: center;
+}
+
+/*! HEADER */
+
+header {
+  background: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: space-between;
+}
+
+.header nav {
+  display: flex;
+  gap: 52px;
+}
+
+li {
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.active {
+  color: #bd1d1d;
+}
+
+/*! HEADER */
+
+/*! MENU */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carts {
+  width: 100%;
+  display: grid;
+  row-gap: 26px;
+  grid-template-columns: repeat(3, 337px);
+  grid-auto-rows: 300px;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  margin-top: 18px;
+}
+
+.cart {
+  border-radius: 15px;
+  background: #d9d9d9;
+  padding: 14px 17px;
+}
+
+.cartImg {
+  width: 301px;
+  height: 167px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.btnDiv button {
+  display: flex;
+  width: 38px;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btnDiv .orderBtn {
+  background: #ddaa27;
+  stroke: #000;
+}
+
+.btnDiv .delBtn {
+  background: #bd1d1d;
+}
+
+.btnDiv .editBtn {
+  background: rgb(10, 157, 10);
+}
+
+/*! MENU */
+
+/*! ORDER */
+
+.order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.orderCart {
+  width: 886px;
+  height: 130px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  margin-top: 63px;
+  display: flex;
+  align-items: center;
+  padding-left: 22px;
+}
+
+.orderImg {
+  width: 186px;
+  height: 103px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.orderText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 53px;
+  width: 367px;
+}
+
+.orderName {
+  color: #000;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 1.08px;
+}
+
+.orderPrice {
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.72px;
+}
+
+.orderBtns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.orderCount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 188px;
+}
+
+.orderDelete {
+  border-radius: 10px;
+  background: #bd1d1d;
+  width: 188px;
+  height: 40px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+}
+
+.plus,
+.minus {
+  width: 60px;
+  height: 38px;
+  border-radius: 10px;
+  background: #ddaa27;
+  color: #000;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 1.08px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.count {
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.72px;
+}
+
+/*! ORDER */
+
+/*! ADMIN */
+
+.admin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 55px;
+  gap: 44px;
+  align-items: center;
+  margin-bottom: 106px;
+}
+
+.admin form input {
+  border-radius: 10px;
+  background: #d9d9d9;
+  border: none;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 2.4px;
+  width: 549px;
+  height: 67px;
+  padding: 0 33px;
+  outline: none;
+}
+
+.admin form button {
+  border-radius: 10px;
+  background: #ddaa27;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 1.08px;
+  width: 254.1px;
+  height: 80px;
+  border: none;
+}
+
+.save {
+  display: none;
+}
+
+/*! ADMIN */
